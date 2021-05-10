@@ -79,11 +79,11 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   font-size: 14px;
   border: 2px solid #ec7821;
   border-radius: 8px;
+  transition: all ease-in-out 0.5s;
 }
 .btn-container .btn:hover{
   color: #ec7821;
   background: transparent;
-  transition: all ease-in-out 0.4s;
 }
 
 /* Hero Section Styling */
@@ -118,10 +118,10 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   border-radius: 8px;
   color: #fff;
   font-size: 13px;
+  transition: all ease-in-out 0.5s;
 }
 .Hero .txt-container .btn:hover{
   background: #ec7821;
-  transition: all ease-in-out 0.4s;
 }
 .Hero .img-container{
   margin-top: auto;
@@ -186,12 +186,13 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   margin-left: 20px;
   margin-right: 20px;
   padding-top: 30px;
+  padding-bottom: 20px;
   border: 2px solid transparent;
   border-radius: 10px;
+  transition: all ease-in-out 0.5s;
 }
 .service-container .card:hover{
   border: 2px solid #ec7821;
-  transition: all ease-in-out 0.4s;
   transform: scale(1.05);
 }
 .service-container .card img{
@@ -199,12 +200,14 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   border-radius: 25px;
 }
 .service-container .txt-container{
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .service-container .txt-container h3{
   color: #fcfcfc;
   border: 0 !important;
+  margin-bottom: 10px;
 }
 .service-container .txt-container .lead{
   line-height: 25px;
@@ -460,12 +463,12 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
 }
 .pricing .card-pseudo{
   border: #505050 solid 2px ;
+  transition: all ease-in-out 0.5s;
 }
 .pricing .card-pseudo:hover{
   background: #ec7821;
   border: #ec7821 solid 2px;
   transform: scale(1.07);
-  transition: all ease-in-out 0.5s;
 }
 .pricing .card{
   max-width: 300px;
@@ -612,10 +615,10 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   border-radius: 10px;
   border: solid transparent 2px;
   width: 420.52px !important;
+  transition: all ease-in-out 0.5s;
 }
 .event .card-pseudo:hover{
   border:#ec7821 solid 2px;
-  transition: all ease-in-out 0.5s;
   transform: scale(1.02);
 }
 .event .card-container .txt{
@@ -679,3 +682,166 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
 }
 
 /* Subscription Section Styling */
+.subscription{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/subscription-bg.jpg") fixed;
+  background-size: cover;
+  padding: 70px;
+}
+.subscription .txt{
+  text-align: center;
+  margin-bottom: 35px;
+}
+.subscription h2{
+  color: #ec7821;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subscription .lead{
+  font-size: 15px;
+}
+.subscription .form{
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subscription .form .mail{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  background: #1b1b1b;
+  outline: none;
+  border: 1px #ec7821 solid;
+  font-size: 14px;
+  color: #e2e2e2;
+  font-weight: 700;
+  border-radius: 14px 0 0 14px;
+  width: 30%;
+}
+.subscription ::placeholder{
+  color: #e2e2e2;
+}
+.subscription .btn{
+  padding: 12px 50px;
+  background: #ec7821;
+  font-weight: 700;
+  color: #e2e2e2;
+  font-size: 14px;
+  border: #ec7821 1px solid;
+  border-left: none;
+  border-radius: 0 14px 14px 0;
+  transition: all ease-in-out 0.5s;
+}
+.subscription .btn:hover{
+  background: transparent;
+  color: #ec7821;
+}
+
+/* Footer Section Styling */
+.footer{
+  background: #1b1b1b;
+}
+.footer .foot-cont{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-evenly;
+}
+.footer .logo{
+  margin-bottom: 10px;
+}
+.footer .lead{
+  line-height: 24px;
+  font-weight: 400;
+}
+.footer h4{
+  color: #ec7821;
+}
+.foot-cont .add , .foot-cont  .mail , .foot-cont .phone{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.foot-cont .second-cont{
+   margin-top: 20px;
+}
+.foot-cont , .add i , .mail i ,.phone i{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.foot-cont .add .fas::before{
+  color: #ec7821;
+}
+.foot-cont .mail .fas::before{
+  color: #ec7821;
+}
+.foot-cont .phone .fas::before{
+  color: #ec7821;
+}
+.foot-cont .info{
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  color:rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+.foot-cont .third-cont{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.foot-cont .third-cont .social i{
+  color: #fbfbfb;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.353);
+  margin-left: 5px ;
+  margin-right: 5px;
+  width: 16px;
+  text-align: center;
+  transition: all ease-in-out 0.5s;
+}
+.foot-cont .third-cont .social .fab:hover{
+  background: #ec7821;
+  border: #ec7821 1px solid;
+}
+.foot-menu{
+  padding: 20px;
+  background: #ff7101;
+}
+.foot-menu .wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #e7ddd4;
+  font-weight: 500;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.foot-menu .wrapper .footnav-menu{
+  display: flex;
+  flex-direction: row;
+}
+.foot-menu li{
+  font-weight: 700 !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all ease-in-out 0.5s;
+}
+.foot-menu li:hover{
+  color: #0f0008;
+}
+
+/* Responsive Design Styling */
+/* for 1040px screen width */
+@media(max-width:1040px){
+  .pricing .card-container{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

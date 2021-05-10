@@ -9,6 +9,8 @@ import Trainers from './Trainers.js';
 import Pricing from './Pricing.js';
 import Contact from './Contact.js';
 import Event from './Event.js';
+import Subscription from './Subscription.js';
+import Footer from './Footer.js';
 
 
 export const Main = () => {
@@ -23,6 +25,8 @@ export const Main = () => {
         < Pricing />
         < Contact />
         < Event />
+        < Subscription />
+        < Footer />
         </>
     )
 }
