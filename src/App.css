@@ -66,7 +66,16 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   transition:  all ease-in-out 0.4s;
 }
 .menu-btn{
-  display: none ;
+  display: none;
+  color: #fff;
+  font-size: 26px;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: all ease-in-out 0.4s;
+  z-index: 999;
+}
+.fa-bars{
+  transition: all ease-in-out 0.4s;
 }
 .btn-container{
   padding-top: 15px;
@@ -144,8 +153,6 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   background: linear-gradient(180deg, rgba(30,28,29,1) 0%, rgba(13,14,16,1) 25%);
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: auto;
-  padding-right: auto;
 }
 .partners img{
   width: 8%;
@@ -170,6 +177,7 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   text-transform: uppercase;
   color: #ec7821;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 .services .txt .lead{
   font-size: 16px;
@@ -348,6 +356,8 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   color: #ec7821;
   margin-left: 10px;
   font-weight: 500;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .classes .btn-container{
   margin-top: 40px;
@@ -375,6 +385,7 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 .trainers .card-container{
   display: flex;
@@ -411,6 +422,8 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 .trainers .card P{
   color: #e2e2e2;
@@ -476,9 +489,13 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
 }
 .pricing .card-container .card .info{
   padding: 15px;
-  padding-left: 35px !important;
-  padding-right: 35px !important;
   background: #131313;
+}
+@media(min-width:900px){
+  .pricing .card-container .card .info{
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+  }
 }
 .pricing .card-container .card h3{
   padding-top: 30px;
@@ -840,8 +857,374 @@ background: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(35,35,35,1) 50%, r
 /* Responsive Design Styling */
 /* for 1040px screen width */
 @media(max-width:1040px){
+  .Hero .txt-container{
+    width: 75%;
+  }
+  .Hero .img-container{
+    padding-left: 20px;
+  }
+  .Hero img{
+    width: 90%;
+  }
+  .services .service-container{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .about .container{
+    margin-right: 5%;
+  }
+  .classes .card .overlay{
+    padding-bottom: 40px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .trainers .card-container{
+    margin-left: 4%;
+     margin-right: 4%;
+  }
   .pricing .card-container{
     margin-left: 2%;
     margin-right: 2%;
+  }
+}
+/* Responsive Design for device below 1000px */
+@media(max-width:1000px){
+  .about .txt-container{
+    padding-right: 20px;
+  }
+  .event .card-container{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .foot-menu .wrapper{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+/* Responsive Design for the device blow 975px */
+@media(max-width:975px){
+  .Hero .txt-container{
+    width: 90%;
+    margin-left: 7% ;
+  }
+  .Hero .img-container{
+    padding-left: 10px;
+  }
+}
+@media(max-width:929px){
+  .classes .card-container{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* Responsive Design for the device below 901px */
+@media(max-width:901px){
+  .services .service-container{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .services .service-container .card{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .pricing .card{
+    width: 15rem;
+    height: 100% ;
+  }
+  .pricing .card .info{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .contact .form{
+    width: 60%;
+  }
+  .contact img{
+    width: 95%;
+  }
+  .contact .txt-container{
+    margin-left: 4%;
+  }
+  .contact .contact-container{
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .trainers .card-pseudo{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* Responsive design below 911px */
+@media(max-width:911px){
+  .classes .card-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .classes .card{
+    width: 21rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+/* Responsive Design for devices below 800px */
+@media(max-width:800px){
+  .header .menu{
+    display: block;
+    z-index: 900;
+    height: 100vh;
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    text-align: center;
+    right: 100%;
+    transition: all ease-in-out 0.6s;
+    padding-top: 40%;
+    top: -10%;
+    height: 110%;
+  }
+  .header .menu-btn{
+    display: block;
+  }
+  .header .btn-container{
+    display: none;
+  }
+  .header .menu.active{
+    right: 0%;
+  }
+  .menu-btn.active i::before{
+    content: "\f00d";
+  }
+  .header .menu a{
+    font-size: 16px;
+  }
+  .header .menu .nav-link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .pricing .card-container{
+    flex-direction: column;
+  }
+  .pricing .card-pseudo{
+    max-width: 300px;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .pricing .card{
+    width: 100%;
+  }
+  .pricing .card-container .card .info{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .event .card-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .event .card-container .card-pseudo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;;
+    margin-bottom: 1rem;
+  }
+  .foot-menu .wrapper .footnav-menu{
+    display: none;
+  }
+  .foot-menu .wrapper{
+    justify-content: center;
+  }
+}
+@media(max-width:750px){
+  .Hero{
+    flex-direction: column;
+  }
+  .Hero .img-container{
+    display: flex;
+  }
+  .Hero img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .partners .img-container{
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+  .services .service-container{
+    flex-direction: column;
+  }
+  .services .card{
+    width: 50%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .trainers .card-container{
+    flex-direction: column;
+  }
+  .trainers .card-pseudo{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact .img-container{
+    display: none;
+  }
+  .contact .contact-container{
+    flex-direction: column;
+  }
+  .contact .form{
+    width: 80% !important;
+  }
+  .about .container{
+    flex-direction: column-reverse;
+  }
+  .about .img-container{
+    display: flex;
+    justify-content: center;
+  }
+  .about img{
+    width: 70%;
+  }
+  .footer .foot-cont{
+    flex-direction: column;
+  }
+}
+@media(max-width:530px){
+  .Hero .img-container{
+    padding: 0;
+  }
+  .partners .img-container{
+    flex-direction: column;
+  }
+  .partners img{
+    width: 25%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services .txt{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .services .card{
+    width: 70%;
+  }
+  .classes .txt-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .classes .card .overlay{
+    padding: 70px;
+    padding-bottom: 30px !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .classes .card{
+    width: 80%;
+  }
+  .trainers .txt-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .trainers .card-pseudo{
+    width: 70%;
+  }
+  .pricing .txt-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact .txt-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .contact .form .name, .con-details{
+    flex-direction: column;
+  }
+  .contact input{
+    margin-left: 0;
+    width: 100%;
+  }
+  .contact .message{
+    width: 100%;
+  }
+  .event .txt-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .event .card-container{
+    margin-left: 1rem;
+    margin-right: 1rem;  
+  }
+  .subscription{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .subscription .mail{
+    width: 50% !important;
+  }
+  .event .card-container .card{
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+  .event .card-container .txt{
+    transform: skewX(0deg);
+    padding-left: 1rem;
+    border-radius: 0 0 10px 10px;
+  }
+  .event .card-container h4 , .event .card-container p{
+    transform: skewX(0deg);
+  }
+  .event .card-container h4{
+    margin-left: 0;
+  }
+  .event .card-container .img-cont{
+    width: 85%;
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    padding-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+  .event .card-container .card-pseudo{
+    width: 85% !important;
+  }
+}
+@media(max-width:450px){
+  .subscription .form{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .subscription .form .mail{
+    width: 90% !important;
+    margin-bottom: 1rem;
+    border-radius: 14px;
+  }
+  .subscription .btn{
+    width: 20%;
+    border-radius: 14px;
+    border: 1px solid #ec7821;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media(max-width:345px){
+  .trainers .card-pseudo{
+    width: 80%;
+  }
+  .services .card{
+    width: 80%;
+  }
+  .pricing .card-pseudo{
+    width: 16rem;
   }
 }
